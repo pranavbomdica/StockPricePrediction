@@ -1,0 +1,77 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# ==============================
+# 🌐 FRONTEND (React)
+# ==============================
+
+# Dependencies
+/frontend/node_modules
+/frontend/.pnp
+/frontend/.pnp.js
+
+# Testing
+/frontend/coverage
+
+# Build output (production)
+/frontend/build
+
+# Logs & Debugging
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+
+# Environment Variables (Local Configs)
+frontend/.env
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+# Misc Files
+/frontend/.DS_Store
+
+# ==============================
+# ⚙️ BACKEND (Python & FastAPI)
+# ==============================
+
+# Virtual Environment (Python)
+/backend/venvBackend
+/backend/__pycache__
+/backend/.venv
+/backend/.python-version
+
+# Python Cache
+/backend/*.pyc
+/backend/*.pyo
+/backend/*.pyd
+/backend/.mypy_cache
+/backend/.pytest_cache
+/backend/.coverage
+
+# Logs & Debugging
+/backend/logs
+/backend/debug.log
+/backend/error.log
+/backend/models
+
+# Secret/Environment Variables
+/backend/.env
+/backend/.env.local
+/backend/.env.development.local
+/backend/.env.test.local
+/backend/.env.production.local
+
+# ==============================
+# 🔄 DOCKER (Ignore Unnecessary Files)
+# ==============================
+/docker-compose.override.yml
+/docker-data
+/docker-logs
+
+# ==============================
+# 🛠 IDE/Editor Configurations (VS Code, JetBrains)
+# ==============================
+.vscode
+.idea
+*.swp
+*.swo
