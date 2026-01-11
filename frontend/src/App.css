@@ -130,10 +130,30 @@
   color: rgba(255, 255, 255, 0.95);
 }
 
+
 .search-input-group {
   display: flex;
   gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.search-hint {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(99, 102, 241, 0.1);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--accent);
   margin-bottom: var(--spacing-md);
+  text-align: left;
+}
+
+.search-hint code {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: monospace;
+  color: var(--primary);
 }
 
 .stock-search-input {

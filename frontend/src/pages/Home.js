@@ -8,6 +8,22 @@ const Home = () => {
 
     // Categorized popular stocks
     const stockCategories = {
+        "Indian Market 🇮🇳 (NSE/BSE)": [
+            { symbol: "RELIANCE.NS", name: "Reliance Industries", icon: "🛢️" },
+            { symbol: "TCS.NS", name: "TCS", icon: "👨‍💻" },
+            { symbol: "HDFCBANK.NS", name: "HDFC Bank", icon: "🏦" },
+            { symbol: "ICICIBANK.NS", name: "ICICI Bank", icon: "🏦" },
+            { symbol: "INFY.NS", name: "Infosys", icon: "💻" },
+            { symbol: "SBIN.NS", name: "SBI", icon: "🏛️" },
+            { symbol: "BHARTIARTL.NS", name: "Bharti Airtel", icon: "📱" },
+            { symbol: "ITC.NS", name: "ITC", icon: "🚬" },
+            { symbol: "TATAMOTORS.NS", name: "Tata Motors", icon: "🚗" },
+            { symbol: "LICI.NS", name: "LIC India", icon: "🛡️" },
+            { symbol: "ADANIENT.NS", name: "Adani Enterprises", icon: "🏗️" },
+            { symbol: "WAAREERTL.BO", name: "Waaree Renewables", icon: "☀️" },
+            { symbol: "ZOMATO.NS", name: "Zomato", icon: "🍕" },
+            { symbol: "PAYTM.NS", name: "Paytm", icon: "💳" },
+        ],
         "US Market 🇺🇸": [
             { symbol: "AAPL", name: "Apple", icon: "🍎" },
             { symbol: "MSFT", name: "Microsoft", icon: "💻" },
@@ -15,20 +31,13 @@ const Home = () => {
             { symbol: "AMZN", name: "Amazon", icon: "📦" },
             { symbol: "TSLA", name: "Tesla", icon: "⚡" },
             { symbol: "NVDA", name: "NVIDIA", icon: "🎮" },
-        ],
-        "Indian Market 🇮🇳 (NSE/BSE)": [
-            { symbol: "RELIANCE.NS", name: "Reliance Industries", icon: "🛢️" },
-            { symbol: "TCS.NS", name: "TCS", icon: "👨‍💻" },
-            { symbol: "HDFCBANK.NS", name: "HDFC Bank", icon: "🏦" },
-            { symbol: "TATAMOTORS.NS", name: "Tata Motors", icon: "🚗" },
-            { symbol: "BHARTIARTL.NS", name: "Bharti Airtel", icon: "📱" },
-            { symbol: "WAAREERTL.BO", name: "Waaree Renewables", icon: "☀️" },
-            { symbol: "ADANIENT.NS", name: "Adani Enterprises", icon: "🏗️" },
-            { symbol: "INFY.NS", name: "Infosys", icon: "💻" },
+            { symbol: "META", name: "Meta", icon: "📘" },
+            { symbol: "NFLX", name: "Netflix", icon: "🎬" },
         ],
         "Crypto 🪙": [
             { symbol: "BTC-USD", name: "Bitcoin", icon: "₿" },
             { symbol: "ETH-USD", name: "Ethereum", icon: "Ξ" },
+            { symbol: "DOGE-USD", name: "Dogecoin", icon: "🐕" },
         ]
     };
 
@@ -65,7 +74,7 @@ const Home = () => {
                         <input
                             type="text"
                             className="stock-search-input"
-                            placeholder="Enter ticker (e.g. RELIANCE.NS, WAREE.BO, AAPL)..."
+                            placeholder="e.g. RELIANCE.NS, TATASTEEL.NS, AAPL"
                             value={searchInput}
                             onChange={(e) => setSearchInput(e.target.value)}
                             onKeyPress={handleKeyPress}
@@ -74,6 +83,10 @@ const Home = () => {
                             🔍 Search
                         </button>
                     </div>
+                    <p className="search-hint">
+                        ℹ️ <strong>For Indian Stocks:</strong> Add <code>.NS</code> for NSE or <code>.BO</code> for BSE<br />
+                        (e.g., <code>SBIN.NS</code>, <code>TCS.BO</code>)
+                    </p>
                     <p className="current-ticker">Currently viewing: <strong>{ticker}</strong></p>
                 </div>
 
