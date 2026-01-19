@@ -10,7 +10,7 @@ The **Real-Time Stock Price Prediction** project is a full-stack application tha
 - ✅ **Predicts stock prices** using **Linear Regression (LR) and Random Forest (RF)** models.
 - ✅ **Visualizes actual vs. predicted stock prices** using **Chart.js**.
 - ✅ **Fully containerized deployment** using **Docker & Docker Compose**.
-- ✅ **Deployed on Azure** for live access.
+  
 
 ---
 
@@ -106,9 +106,9 @@ This project is **open-source** under the **MIT License**.
 ---
 
 ## 📞 Contact
-**Developer:** Mohammed Shehab
+**Developer:** Bomdica Pranav
 
-**Email:** shihab@live.cn
+**Email:** pranavbomdika@gmail.com
 
-**GitHub:** [github.com/m12shehab](https://github.com/m12shehab)
+**GitHub:** https://github.com/pranavbomdica
 
